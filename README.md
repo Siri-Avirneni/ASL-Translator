@@ -69,7 +69,7 @@ ASL-Translator/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Siri5ct/ASL-Translator.git
+git clone https://github.com/Siri-Avirneni/ASL-Translator.git
 cd ASL-Translator
 ```
 
