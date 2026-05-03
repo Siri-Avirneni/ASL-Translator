@@ -1,35 +1,132 @@
-# AUDIO SPEECH TO SIGN LANGUAGE CONVERTER
-A web application which takes in live audio speech recording as input, converts it into text and displays the relevant Indian Sign Language animations.
+# 🎧 Audio to Sign Language Translator
 
->- Front-end using HTML,CSS,JavaScript.
->- Speech recognition using JavaScript Web speech API.
->- Text Preprocessing using Natural Language Toolkit(NLTK).
->- A 3D animation of a character created
-using Blender 3D tool.
+## 📌 Project Overview
 
-Project Demo Video: https://youtu.be/YiHhD0QGrno
+This project is a Django-based web application that converts **spoken audio into sign language output**. It is designed to bridge the communication gap between hearing individuals and deaf-mute people.
 
+The system captures voice input through a microphone, converts it into text, processes the text, and displays corresponding **sign language videos**.
 
-## Prerequisites
+---
 
->- Python >= 3.7
->- Browser supports Web Speech API
->- Download all required packages for python script A2SL/views.py
+## 👥 Team Members
 
+* A. Prianka
+* A. Siri 
+* A. Niranjan 
 
-## Installation Guide:
+---
 
-These instructions will get you download the project and running on your local machine for development and testing purposes.
+## 🚀 Features
 
+* 🎤 Speech-to-Text using microphone input
+* 🔐 User Registration and Login system
+* 🧠 Text processing and keyword extraction
+* 🎥 Sign language output using pre-recorded videos
+* 🌐 Simple and user-friendly web interface
 
-### Instructions
+---
 
-1. Open the Downloads folder and then open the terminal.
-2. From the terminal, run the python file using the command "python manage.py runserver ####" (#### optional port number).
-3. From the terminal, it shows localhost address (looks like this "server at http://127.0.0.1:8000/") run on browser.
-4. Sign up and start exploring.
-5. Click on mic button to record speech.
-6. Speech is going to processed and respective animated outputs are shown accordingly and it also support entered text manually.
+## 🛠️ Technologies Used
 
+* Python
+* Django
+* SpeechRecognition
+* PyAudio
+* OpenCV
+* NumPy
+* HTML, CSS, JavaScript
 
+---
 
+## ⚙️ Working Process
+
+1. User logs into the system
+2. Provides audio input through microphone
+3. Speech is converted into text using SpeechRecognition
+4. Text is processed to extract keywords
+5. Each keyword is mapped to a corresponding sign language video from the assets folder
+6. Videos are displayed sequentially as output
+
+---
+
+## 📂 Project Structure
+
+```bash
+ASL-Translator/
+│── manage.py
+│── db.sqlite3
+│── requirements.txt
+│── README.md
+│
+├── A2SL/        # Django project files
+├── assets/      # Sign language videos
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Siri5ct/ASL-Translator.git
+cd ASL-Translator
+```
+
+### 2. Create Virtual Environment
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Apply Migrations
+
+```bash
+python manage.py migrate
+```
+
+### 5. Run the Server
+
+```bash
+python manage.py runserver
+```
+
+### 6. Open in Browser
+
+http://127.0.0.1:8000/
+
+---
+
+## 📸 Screenshots
+
+(Add screenshots from your project here)
+
+---
+
+## ⚠️ Limitations
+
+* Limited vocabulary based on available video dataset
+* Accuracy depends on clarity of speech input
+* Uses predefined videos instead of real-time gesture generation
+
+---
+
+## 🔮 Future Improvements
+
+* Expand sign language dataset
+* Improve speech recognition accuracy
+* Add real-time gesture animation
+* Support multiple languages
+
+---
+
+## 📄 License
+
+This project is developed for academic purposes only.
