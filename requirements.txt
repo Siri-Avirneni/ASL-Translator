@@ -1,0 +1,6 @@
+Django
+SpeechRecognition
+pyaudio
+opencv-python
+numpy
+pandas
